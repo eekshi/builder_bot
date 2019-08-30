@@ -413,7 +413,7 @@ app.post('/checkCredentials', (req, res) => {
     //console.log('check credentials');
     //console.log("req.body.href", req.body.href);
     FbIdCheck({ fbId: req.body.href }).then((respData) => {
-        console.log("respData.resData.docs", respData.resData.docs.length);
+        console.log("respData.resData.docs", respData.resData.docs);
         if (respData.resData == 'error') {
             //console.log('error occured');
             res.send('error');
