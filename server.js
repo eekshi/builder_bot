@@ -827,7 +827,7 @@ function loginSend(id, text) {
                         buttons: [
                             {
                                 "type": "account_link",
-                                "url": "https://ec035990.ngrok.io/fblogin?id=" + id,
+                                "url": "https://builder-bot-miracle.herokuapp.com/fblogin?id=" + id,
                             }
                         ]
                     }
@@ -837,6 +837,39 @@ function loginSend(id, text) {
     };
     requestFun(dataPost)
 }
+
+function loginSend1(id, text) {
+
+    var dataPost = {
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: { access_token: process.env.Facebook_Token },
+        method: 'POST',
+        json: {
+            recipient: { id: id },
+            message: {
+                attachment: {
+                    type: "template",
+                    payload: {
+                        template_type: "button",
+                        text: text,
+                        buttons: [
+                            {
+                                 "type":"web_url",
+                            "url":"www.miraclesoft.com",
+                            "title":"More Details"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    };
+    requestFun(dataPost)
+}
+
+
+
+
 
 //request function
 function requestFun(dataPost) {
@@ -1470,8 +1503,8 @@ function messageForwardOrProcess(id, messageLocal) {
                 })
             }
             else if(messageLocal.data.function == "Financing Plan"  ){
-                loginSuccessMessage(id, messageLocal.data.message)
-  sendCards1(id) 
+                loginSend1(id, " Yes, for more information please find here")
+ // sendCards1(id) 
                    
 
             }
