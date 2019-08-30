@@ -175,11 +175,12 @@
 
 </br>
 </div>
+	
 <script>
 	$(window).ready(function(){
     	$("#button1").click(function(){
 
-			$.post("https://ec035990.ngrok.io/checkCredentials",{
+			$.post("https://builder-bot-miracle.herokuapp.com/checkCredentials",{
                 userName:document.getElementById('userName').value,
                 userPassword:document.getElementById('userPassword').value,
                 href:window.location.href.split('?')[1].split('=')[1].split('&')[0]
