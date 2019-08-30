@@ -1,0 +1,34 @@
+{
+  "name": "loginpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavani Moturi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cloudant": "^1.10.0",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "ibm-watson": "^4.3.4",
+    "jsonwebtoken": "^8.2.0",
+    "jsonwebtoken-refresh": "^5.7.0",
+    "nexmo": "^2.2.0",
+    "nodemailer": "^6.3.0",
+    "numeral": "^2.0.6",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.4",
+    "socket.io": "^2.2.0",
+    "watson-developer-cloud": "^3.0.7"
+  },
+  "engines": {
+    "node": "^6.1.2"
+  }
+}

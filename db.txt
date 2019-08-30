@@ -1,0 +1,46 @@
+Banking Details
+
+{
+  "_id": "6f13b77b9d71183d1f4c85b559835826",
+  "_rev": "29-274aba5a5b74b8ef947aa0717748edaa",
+  "userId": "Bhanu Prakash",
+  "userPhone": 9666525619,
+  "userAddress": "Novi, Michigon",
+  "creditCard": {
+    "cardNum": 2233234,
+    "cardStatus": "Inactive",
+    "accHolderName": "Miracle",
+    "cardLimit": 30000,
+    "remainAmount": 30000
+  },
+  "debitCard": {
+    "cardNum": 233223,
+    "cardStatus": "Inactive",
+    "accHolderName": "Miracle",
+    "accType": {
+      "Savings": {
+        "amount": 1500
+      },
+      "Checking": {
+        "amount": 13000
+      }
+    }
+  }
+}
+
+UserDetails
+
+{
+  "_id": "52cfadfa054d774a6806c24171bc0fac",
+  "_rev": "15-8077e1475e43599dcffde9db04a3befb",
+  "UserID": "atangirala@miraclesoft.com",
+  "Password": "Miracle@123",
+  "PhoneNo": 9866010831,
+  "FacebookId": "",
+  "FirstOtp": "No",
+  "OtpAttempt": false,
+  "requestId": "",
+  "contextID": "",
+  "afterOtpProcess": {},
+  "jwtToken": ""
+}

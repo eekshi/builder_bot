@@ -1,0 +1,47 @@
+
+Account DB:
+
+{
+  "_id": "b50623bc18b2c74d367b401e5726e6b9",
+  "_rev": "92-d7fe7114417ff4fd576317ff731d98f5",
+  "userName": "Chanakya Lokam",
+  "phoneNo": 9704478300,
+  "userAddress": "45625 Grand River Avenue, Novi MI(48374) USA",
+  "creditCard": {
+    "cardNum": 4722546316026336,
+    "cardStatus": "Active",
+    "accHolderName": "Miracle",
+    "cardLimit": 30000,
+    "remainAmount": 23000
+  },
+  "debitCard": {
+    "cardNum": 2332235648946846,
+    "cardStatus": "Active",
+    "accHolderName": "Miracle",
+    "accType": {
+      "Savings": {
+        "amount": 15000
+      },
+      "Checking": {
+        "amount": 22000
+      }
+    }
+  }
+}
+
+User DB:
+
+{
+  "_id": "7215eed1d83c60bfb6b3fc003a2d2932",
+  "_rev": "392-5792a6da8dbe9e6d266502add62c26af",
+  "userEmail": "clokam@miraclesoft.com",
+  "password": "Miracle@123",
+  "userName": "Chanakya Lokam",
+  "phoneNo": 9704478300,
+  "facebookId": "",
+  "firstOtp": "No",
+  "requestId": "",
+  "contextId": "",
+  "jwtToken": "",
+  "afterOtpProcess": {}
+}
