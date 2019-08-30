@@ -1034,7 +1034,7 @@ function sendCard(id) {
                                 "title": "Sales Coordinator",
                                 // "color":"#FF0000",
                                 //"image_url": "https://res.cloudinary.com/douaer6ci/image/fetch/s--_vrn-ZIM--/c_fill,f_auto,fl_any_format.progressive,h_225,q_auto,w_400/http://prd-champion-homes.s3.amazonaws.com/images/barclay-7611-optional-7-12-roof-pitch-with-site-built-porch-by-other.jpg",
-                              "subtitle": "PCL Construction \n Los Angeles, CA, USA \n 5 days ago",
+                              "subtitle": "PCL Construction \n Novi, US \n 5 days ago",
                               "buttons":
                               [
                                   {
@@ -1049,7 +1049,7 @@ function sendCard(id) {
                                 "title": "Sr.Accountant",
                                 // "color":"#FF0000",
                                // "image_url": "https://res.cloudinary.com/douaer6ci/image/fetch/s--308qPBkD--/c_fill,f_auto,fl_any_format.progressive,h_225,q_auto,w_400/http://prd-champion-homes.s3.amazonaws.com/images/barclay-6445-optional-7-12-roof-pitch-with-site-built-porch-garage-by-other.jpg",
-                                "subtitle": "Wohlsen Construction Company \n Lancaster County, PA, USA \n 4 days ago",
+                                "subtitle": "Wohlsen Construction Company \n Novi, US \n 4 days ago",
                                 "buttons":
                                 [
                                     {
