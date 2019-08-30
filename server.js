@@ -970,7 +970,7 @@ function sendCards1(id) {
                             {
                                 
                                 // "color":"#FF0000",
-                                "image_url": "https://st3.depositphotos.com/5829224/18210/v/1600/depositphotos_182105992-stock-illustration-home-builder-logo-template.jpg",
+                                "image_url": "https://lh3.googleusercontent.com/DRfou_3A5CpJw9Ql5QTxScJEvnykozgeG7zQmXKrKuviFv9wXp785xGPMY9vDrTWAIbaS4ZcziUiS-7QDd7w=w1366-h625-rw",
                                 "title": "homes@gmail.com",
                                 "subtitle": "5167284208",
                                // "text": "dfghjkl"
