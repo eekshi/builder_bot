@@ -410,10 +410,10 @@ app.get('/proactiveMessages', (req, res) => {
     })
 })
 app.post('/checkCredentials', (req, res) => {
-    console.log('req.body',req.body);
-    console.log("req.body.href", req.body.href);
+    //console.log('check credentials');
+    //console.log("req.body.href", req.body.href);
     FbIdCheck({ fbId: req.body.href }).then((respData) => {
-        console.log("respData.resData.docs", respData.resData.docs);
+        console.log("respData.resData.docs", respData.resData.docs.length);
         if (respData.resData == 'error') {
             //console.log('error occured');
             res.send('error');
@@ -506,7 +506,7 @@ function socketImplementation(fbid, msg, conversationID, email, phno) {
     console.log("inside socketsimp")
     var options = {
         method: 'POST',
-        uri: 'https://agentbackend.herokuapp.com/getRequest',
+        uri: 'https://builder-bot-miracle.herokuapp.com/getRequest',
         body: {
             "fbId": fbid,
             "msg": msg.text,
@@ -970,9 +970,9 @@ function sendCards1(id) {
                             {
                                 
                                 // "color":"#FF0000",
-                                "image_url": "https://lh3.googleusercontent.com/DRfou_3A5CpJw9Ql5QTxScJEvnykozgeG7zQmXKrKuviFv9wXp785xGPMY9vDrTWAIbaS4ZcziUiS-7QDd7w=w1366-h625-rw",
-                                "title": "homes@gmail.com",
-                                "subtitle": "5167284208",
+                                "image_url": "https://lh3.googleusercontent.com/srsE0OKE9z1ICaYeP1cBrbEVaFSp5E691tPdV6vC0fLtaqpSsfSzIcFj8HQGlIeGaZM0MDlwJw6BQ8i3JRfUPlc7Bp1SDO1AAitirVoDIru6JQ3WStqFYJU-1Hfngn6PLb8pSoAUt5nLFmYkE-bAChWTSbDPypGMDocmjwEboXmqvfzZVxEe7O95FmIH6qjuPAm8ydnyRDcckXLYxYq08C0IHoaK15HF1mXkKnML7MjbuA8Cvx40A_ubQYqdu1491h8r7-UAwR9QgKf3v9kGo7d72A-HjiZLE26jKUhNzfmCpXlq2TWtLRKoOF8Ga0CDdDLrU3oflZbNI5LtT8DlhzMKTAlY-l-4DZ-9ZsgnjYG3uehjKBk0rHZ32e_LoZngdy72JdahYrg043oBO9zgU09XP3IbsDoP8VddedlpwrU_XuihFtkmMrC8O_uewmBFvfrc_MJprLPPd7nLfqplmKNsX71rZJa3hrbG0JteM5I0r883iJlh2YFJEzH6eNzB0HwxbnGjCwVra0E6NGKdWziNGxeRhIXxaqN5p4aJMOjXUptmDQBgjetdIVwPeE_Icz6MCnLcVsTYaV3C0DfGqN9Cvm0ifrLT17TxD4WQXUnExGO_UVlq2Yg7zFs0H2S9drihFrvYWgzLXjgJOcvMew=w1366-h625",
+                                "title": "Miracle Builders",
+                                "subtitle": "Miracle Software Systems, Inc \n 45625 Grand River Avenue \n  Novi MI(48374) USA \n www.miraclesoft.com",
                                // "text": "dfghjkl"
                             }
                         ]
@@ -1052,7 +1052,7 @@ function sendCard(id) {
                         
                             {
                                 "title": "Production Supervisor - New Construction" ,
-                                "subtitle": "Jacobs Engineering Group Inc \n 1 week ago",
+                                "subtitle": "Jacobs Engineering Group Inc \n Novi, US \n 1 week ago",
                                 "buttons":
                                 [
                                     {
@@ -1067,7 +1067,7 @@ function sendCard(id) {
                                 "title": "Sales Coordinator",
                                 // "color":"#FF0000",
                                 //"image_url": "https://res.cloudinary.com/douaer6ci/image/fetch/s--_vrn-ZIM--/c_fill,f_auto,fl_any_format.progressive,h_225,q_auto,w_400/http://prd-champion-homes.s3.amazonaws.com/images/barclay-7611-optional-7-12-roof-pitch-with-site-built-porch-by-other.jpg",
-                              "subtitle": "PCL Construction \n 5 days ago",
+                              "subtitle": "PCL Construction \n Novi, US \n 5 days ago",
                               "buttons":
                               [
                                   {
@@ -1082,7 +1082,7 @@ function sendCard(id) {
                                 "title": "Sr.Accountant",
                                 // "color":"#FF0000",
                                // "image_url": "https://res.cloudinary.com/douaer6ci/image/fetch/s--308qPBkD--/c_fill,f_auto,fl_any_format.progressive,h_225,q_auto,w_400/http://prd-champion-homes.s3.amazonaws.com/images/barclay-6445-optional-7-12-roof-pitch-with-site-built-porch-garage-by-other.jpg",
-                                "subtitle": "Wohlsen Construction Company \n 4 days ago",
+                                "subtitle": "Wohlsen Construction Company \n Novi, US \n 4 days ago",
                                 "buttons":
                                 [
                                     {
