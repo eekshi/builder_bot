@@ -62,7 +62,7 @@ module.exports = insightsModule;
 function reportMessage(messageData) {
 
     var requestPayload = {
-        url:"https://220b8b3d.ngrok.io/conversation/v4/register",
+        url:"https://minsights-watson-backend.azurewebsites.net/conversation/v4/register",
      //url: "https://minsights-server-v2-1.azurewebsites.net/conversation/v4/register",
       
      // url: "https://minsights-server-v2-1.azurewebsites.net/registerconversation/",
