@@ -1523,7 +1523,7 @@ function messageForwardOrProcess(id, messageLocal) {
                  console.log(data.resData.docs[0].userEmail)
                 //  loginSuccessMessage(id, " Thank you for the interest");
                 
-                buttonSend3(id,"Thank you for the interest, please confirm your contact details \n \n "+' *Full Name* : '+data.resData.docs[0].userName+'\n *Email* : '+data.resData.docs[0].userEmail+' \n *Phone* : '+data.resData.docs[0].phoneNo+"\n \n")
+                buttonSend3(id,"Thank you for the interest, please confirm your contact details \n\n "+'*Full Name* : '+data.resData.docs[0].userName+'\n *Email* : '+data.resData.docs[0].userEmail+' \n *Phone* : '+data.resData.docs[0].phoneNo+"\n \n")
                 })
              }
 
