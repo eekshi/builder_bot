@@ -506,7 +506,7 @@ function socketImplementation(fbid, msg, conversationID, email, phno) {
     console.log("inside socketsimp")
     var options = {
         method: 'POST',
-        uri: 'https://builder-bot-miracle.herokuapp.com/getRequest',
+        uri: 'https://agentbackend.herokuapp.com/getRequest',
         body: {
             "fbId": fbid,
             "msg": msg.text,
