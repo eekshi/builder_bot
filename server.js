@@ -375,7 +375,7 @@ app.get('/feedback', (req, res) => {
 
 function userInfo(id) {
     return new Promise(function (resolve, reject) {
-        request('https://graph.facebook.com/v3.2/' + id + '?fields=id,email,first_name,last_name,profile_pic&access_token=EAAGZB98Byw60BAC4YoHeu2Tp6yWD5EWex5ZBXxGYil5vs93gPhpZCADZCbkD9JkdChmTHZAUZC0y0DKXdQKr38FCCZBq9viZBo5NkXZCWyExoHz4GxKPTL6aHwUwfI7QTQmmzIChR8ibwvfFqSCFvUWQFgAMvFoG2hmrAZB7v9g6jiLQZDZD',
+        request('https://graph.facebook.com/v3.2/' + id + '?fields=id,email,first_name,last_name,profile_pic&access_token=EAAJNKHeA1doBAMaoJFD5uydFsz7UJc6l0jRTctWEvLUHEdLZApFLU9ES14DNRFS00veuR9G8Qj8MkyMRB7vZBPltDSWvz4VEbuI07LMpGwEZCldhoEbYybm4Ar1I2FUZBYqq7UK7yO6Kml4tiN1yfknCZC3ExfBYZBxrYWdK8FNgZDZD',
             function (err, response, body) {
                 if (err) {
                     reject({ "error": err })
