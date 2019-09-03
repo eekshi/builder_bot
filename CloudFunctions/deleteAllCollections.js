@@ -3,7 +3,7 @@ module.exports = (params) => {
     var Cloudant = require('cloudant');
     require('dotenv').config();
     // require('dotenv').config();
-    var cloudantURL = "https://3bd18d5b-085c-4f56-8c1c-b265c0c58d3c-bluemix:f82abbe20a98df82420da4290f655a84afc8baf0faf697211dc9d0bbed46e93b@3bd18d5b-085c-4f56-8c1c-b265c0c58d3c-bluemix.cloudantnosqldb.appdomain.cloud";
+    var cloudantURL = "https://e3ac4c51-e9db-4ca2-bd1c-496c30d68953-bluemix:a9b28932b59b6b2be1e20ae67a08592fb997fde38f5fa4f1dacc172533f447bd@e3ac4c51-e9db-4ca2-bd1c-496c30d68953-bluemix.cloudantnosqldb.appdomain.cloud";
     var cloudant = new Cloudant({ url: cloudantURL, maxAttempt: 5, plugins: ['iamauth', { retry: { retryDelayMultiplier: 4, retryErrors: true, retryInitialDelayMsecs: 1000, retryStatusCodes: [429] } }] });
     var userDB = cloudant.db.use('users_db');
     return new Promise(function (resolve, reject) {
