@@ -410,8 +410,8 @@ app.get('/proactiveMessages', (req, res) => {
     })
 })
 app.post('/checkCredentials', (req, res) => {
-    //console.log('check credentials');
-    //console.log("req.body.href", req.body.href);
+    console.log('req.body',req.body);
+    console.log("req.body.href", req.body.href);
     FbIdCheck({ fbId: req.body.href }).then((respData) => {
         console.log("respData.resData.docs", respData.resData.docs);
         if (respData.resData == 'error') {
