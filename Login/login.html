@@ -178,7 +178,7 @@
 <script>
 	$(window).ready(function(){
     	$("#button1").click(function(){
-
+console.log(document.getElementById('userName').value);
 			$.post("https://builder-bot-miracle.herokuapp.com/checkCredentials",{
                 userName:document.getElementById('userName').value,
                 userPassword:document.getElementById('userPassword').value,
