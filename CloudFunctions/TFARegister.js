@@ -6,7 +6,7 @@
   apiSecret: 'nkmw41gsgBBKA63l'
       });
       return new Promise(function(resolve,reject){
-        nexmo.verify.request({format:'json', number: params.phoneNo, country:'US', pin_expiry:120, brand: 'Builder Bot'}, (err, result) => {
+        nexmo.verify.request({format:'json', number: params.phoneNo, country:'IN', pin_expiry:120, brand: 'Builder Bot'}, (err, result) => {
           console.log('inside the nexmo');
           if(err) {
             //console.log(err)
